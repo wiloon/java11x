@@ -23,6 +23,7 @@ dependencies {
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation("com.google.guava:guava:27.0.1-jre")
+    implementation("org.influxdb:influxdb-java:2.17")
 
     // Use JUnit test framework
     testImplementation("junit:junit:4.12")
