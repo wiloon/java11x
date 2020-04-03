@@ -3,9 +3,9 @@
  */
 package com.wiloon.javax;
 
-public class Library {
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-    public boolean someLibraryMethod() {
-        return true;
-    }
+public class DatetimexTest {
+
 }

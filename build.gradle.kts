@@ -14,7 +14,10 @@ plugins {
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+   // jcenter()
+    maven {
+        setUrl("https://maven.aliyun.com/repository/public")
+    }
 }
 
 dependencies {
