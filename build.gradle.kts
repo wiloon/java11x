@@ -14,7 +14,7 @@ plugins {
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
-   // jcenter()
+    // jcenter()
     maven {
         setUrl("https://maven.aliyun.com/repository/public")
     }
@@ -30,8 +30,8 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation("junit:junit:4.12")
-    compile("org.apache.kafka:kafka_2.12:2.2.0")
-    compile("com.google.protobuf:protobuf-java:3.7.1")
-    compile("com.alibaba:fastjson:1.2.58")
-    compile("net.sf.ingenias:common-codec:1.3")
+    implementation("org.apache.kafka:kafka_2.12:2.2.0")
+    implementation("com.google.protobuf:protobuf-java:3.7.1")
+    implementation("com.alibaba:fastjson:1.2.58")
+    implementation("net.sf.ingenias:common-codec:1.3")
 }

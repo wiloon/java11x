@@ -10,8 +10,8 @@ public class Datetimex {
     public static void main(String[] args) {
         LocalTime time = LocalTime.of(14, 10, 21);
         System.out.println(time);
-        LocalDateTime dateTime = LocalDateTime.of(2020, 4, 3, 17, 23, 59);
-        System.out.println(dateTime);
+        LocalDateTime localDateTime = LocalDateTime.of(2020, 4, 3, 17, 23, 59);
+        System.out.println(localDateTime);
 
         ZonedDateTime zoneDateTime = ZonedDateTime.now(ZoneId.of("America/New_York"));
         System.out.println(zoneDateTime);
@@ -24,5 +24,9 @@ public class Datetimex {
 
         Instant instant = Instant.now();
         System.out.println(instant);
+
+        Duration duration = Duration.between(localDateTime, LocalDateTime.now());
+        System.out.println(duration.getSeconds());
+        System.out.println(Duration.between(LocalDateTime.now(), localDateTime).getSeconds());
     }
 }
